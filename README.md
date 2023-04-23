@@ -28,26 +28,6 @@ POST	/photos	Adds a new photo to the collection.
 PUT	/photos/{id}	Updates a specific photo by ID.
 DELETE	/photos/{id}	Deletes a specific photo by ID.
 
-## GET /photos
-Returns all photos.
-### `curl http://localhost:3002/photos`
-
-## GET /photos/{id}
-Returns a specific photo by ID.
-### `curl http://localhost:3002/photos/1`
-
-## POST /photos
-Adds a new photo to the collection.
-### `curl -X POST -H "Content-Type: application/json" -d '{"title": "New Photo", "url": "https://via.placeholder.com/150/771796"}' http://localhost:3002/photos`
-
-## PUT /photos/{id}
-Updates a specific photo by ID.
-### `curl -X PUT -H "Content-Type: application/json" -d '{"title": "Updated Photo", "url": "https://via.placeholder.com/150/771796"}' http://localhost:3002/photos/1`
-
-## DELETE /photos/{id}
-Deletes a specific photo by ID.
-### `curl -X DELETE http://localhost:3002/photos/1`
-
 ## Built With
 Flask - A micro web framework written in Python.
 Flask-CORS - A Flask extension for handling Cross-Origin Resource Sharing (CORS).
